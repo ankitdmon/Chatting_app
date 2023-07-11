@@ -1,7 +1,9 @@
-const express = require('express');
+const express = require("express");
+const app = express();
 
 // folders import
+const noAuth = require("./noAuth");
 
-const app = express();
+app.use("/public", noAuth);
 
 module.exports = app;
