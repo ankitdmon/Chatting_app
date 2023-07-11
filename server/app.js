@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5001;
 
 // middleware
 app.use(express.json());
+
 dbConnection();
 
 app.use("/", routes);
