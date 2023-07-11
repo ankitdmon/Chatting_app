@@ -1,9 +1,10 @@
-function App() {
+import React from "react";
+import Register from "./components/register";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="bg-red-500">Hello React!!</h1>
-    </div>
+    <Register />
   );
-}
+};
 
 export default App;
